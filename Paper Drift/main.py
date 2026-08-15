@@ -79,11 +79,11 @@ while run:
     window.blit(playerTemp, (player.x,player.y))  
 
     if fps > 0:
-        player.Xvel = player.Xvel * 0.94 ** (deltaTime * targetfps)
-        player.Yvel = player.Yvel * 0.94 ** (deltaTime * targetfps)
+        player.Xvel = player.Xvel * 0.94
+        player.Yvel = player.Yvel * 0.94
 
-        player.x += player.Xvel * deltaTime
-        player.y += player.Yvel * deltaTime
+        player.x += player.Xvel
+        player.y += player.Yvel
 
 
     keys = pygame.key.get_pressed()
